@@ -13,6 +13,7 @@
     "nodemon": "^3.0.3"
   },
   "scripts": {
+    "start": "nodemon  src/index.ts",
     "dev": "nodemon  src/index.ts"
   },
   "version": "1.0.0",
