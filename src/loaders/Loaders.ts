@@ -7,7 +7,7 @@ class Loaders {
   }
 
   configureCors(app: any) {
-    const whitelist = ["http://localhost:5173"];
+    const whitelist = ["http://localhost:5173", "http://localhost:4173", "*"];
     const corsOptions = {
       methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
       origin: function (
