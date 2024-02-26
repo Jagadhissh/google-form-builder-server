@@ -13,6 +13,12 @@ loaders.configureCors(app);
 connectToDatabase();
 
 app.use(express.json());
+app.get("/post", (req, res) => {
+  res.json("Hello World");
+});
+app.get("/", (req, res) => {
+  res.json("entrance route");
+});
 app.use("/api/v1", applicationV1Routes);
 app.use(errorMiddlware);
 
